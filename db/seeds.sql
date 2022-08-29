@@ -1,24 +1,30 @@
-INSERT INTO departments (deptartment_name)
-VALUES 
-('Human Resources'),
-('Finance'),
-('Legal');
+use company_db;
 
+INSERT INTO department
+    (name)
+VALUES
+    ('Human Resources'),
+    ('Finance'),
+    ('Legal'),
+    ('Sales');
 
-INSERT INTO roles (title, salary, department_id)
-VALUES 
-('Vice President', 120000, 1),
-('Director', 96000, 1),
+INSERT INTO role
+    (title, salary, department_id)
+VALUES
+('Vice President', 170000, 1),
+('Director', 120000, 1),
 ('Team Lead', 75000, 1),
-('Senior Vice President', 150000, 2),
-('Financial Analyst', 120000, 2),
+('Senior Vice President', 250000, 2),
+('Financial Analyst', 105000, 2),
 ('Accountant', 120000, 2),
-('General Counsel', 145000, 3),
-('Lawyer', 135000, 3),
-('Legal Team Lead', 70000, 1);
+('General Counsel', 185000, 3),
+('Lawyer', 165000, 3),
+('Legal Team Lead', 70000, 3),
+('Sales Lead', 90000, 4);
 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
-VALUES 
+INSERT INTO employee
+    (first_name, last_name, role_id, manager_id)
+VALUES
 ('Barbara', 'Smith', 1, NULL),
 ('Craig', 'Vickers', 2, 1),
 ('Ellen', 'Haspel', 3, 2),
@@ -26,3 +32,4 @@ VALUES
 ('Patrick', 'Sanders', 5, 4),
 ('Rachel', 'Green', 6, NULL),
 ('Ryan', 'Doe', 7, NULL);
+('Jason', 'Rose', 8, 3),
