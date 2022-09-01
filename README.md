@@ -31,7 +31,7 @@ Applications used in this project were:
   A demo for this can be found here (https://drive.google.com/file/d/1fmsHHi1ErQAGXD0o4yVisf7gIngfyxxW/view)
 
     Example of the integrated terminal
-   ![Image of integrated terminal]()
+   ![Image of integrated terminal](img/employeetrackerterminal.png)
 
   ## Questions
   Please reach out to me at the below with any questions:
